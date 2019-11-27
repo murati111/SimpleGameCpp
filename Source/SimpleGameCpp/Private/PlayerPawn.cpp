@@ -45,3 +45,8 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 }
 
+FVector APlayerPawn::GetPlayerMoveDirection(float Direction)const
+{
+	return (FVector(10.0f, 0.0f, 0.0f) * Direction) + GetActorLocation();
+}
+

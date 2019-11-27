@@ -29,4 +29,7 @@ public:
 private:
 	UPROPERTY(BlueprintReadonly, VisibleAnyWhere, Category = "PlayerMesh", meta = (AllowPrivateAccess = true))
 		class UStaticMeshComponent* StaticMeshComponent;
+public:
+	UFUNCTION(BlueprintPure)
+		FVector GetPlayerMoveDirection(float Direction) const;
 };
